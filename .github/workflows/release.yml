@@ -6,7 +6,9 @@ on:
 
 jobs:
   actions-tagger:
-    runs-on: ubuntu-20.04
+    runs-on:
+      group: nyt-runners
+      labels: nyt-2-core
     steps:
       - uses: Actions-R-Us/actions-tagger@v2
         with:
